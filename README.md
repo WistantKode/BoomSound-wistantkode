@@ -1,6 +1,6 @@
 # BoomSound - Site Web de Casques Audio Responsive
 
-![Aperçu du site BoomSound](./assets/img/home.png)
+![Aperçu du site BoomSound](./home.png)
 
 Ceci est une page d'accueil responsive pour une marque fictive de casques audio "BoomSound". Le projet met en avant le modèle "Beats 3" avec un design épuré et moderne, incluant un thème sombre et un thème clair.
 
