@@ -1,10 +1,10 @@
 # BoomSound - Responsive Headphones Website
 
-![BoomSound Website Preview](./assets/img/home.png)
+![BoomSound Website Preview](./home.png)
 
 This is a responsive landing page for a fictional headphone brand "BoomSound". The project showcases the "Beats 3" model with a clean and modern design, including a dark and a light theme.
 
-## ✨ Features
+##  Features
 
 -   **Fully Responsive:** Adapts to all device sizes, from mobile phones to desktops.
 -   **Dark & Light Theme:** A default dark theme with an option for a light theme.
@@ -12,11 +12,11 @@ This is a responsive landing page for a fictional headphone brand "BoomSound". T
 -   **Scroll Animations:** Elements animate elegantly as you scroll down the page, powered by ScrollReveal.
 -   **Clean & Modern UI:** An aesthetic and professional user interface focused on the product.
 
-## 🚀 Live Demo
+##  Live Demo
 
 You can see a live demo of the project here: [BoomSound Demo](https://wistantkode.github.io/BoomSound-wistantkode/)
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 -   **HTML5**
 -   **CSS3**
@@ -28,7 +28,7 @@ You can see a live demo of the project here: [BoomSound Demo](https://wistantkod
 -   **[ScrollReveal](https://scrollrevealjs.org/)** - for scroll animations.
 -   **[Google Fonts](https://fonts.google.com/)**
 
-## 🔧 How To Use
+##  How To Use
 
 To get a local copy up and running, follow these simple steps.
 
