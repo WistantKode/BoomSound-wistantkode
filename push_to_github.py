@@ -15,7 +15,8 @@ def run_command(command):
         # Exécute la commande et capture la sortie.
         # Executes the command and captures the output.
         process = subprocess.run(command, check=True, shell=True, text=True, capture_output=True)
-        print(process.stdout)
+        if process.stdout:
+            print(process.stdout)
         if process.stderr:
             print(f"Erreur standard:\n{process.stderr}")
     except subprocess.CalledProcessError as e:
@@ -24,12 +25,22 @@ def run_command(command):
         print(f" Erreur lors de l'exécution de la commande : '{e.cmd}'")
         print(f"Code de retour : {e.returncode}")
         print(f"Sortie : \n{e.stdout}")
-        print(f"Erreur : \n{e.stderr}")
+        if e.stderr:
+            print(f"Erreur : \n{e.stderr}")
         sys.exit(1)
 
 def main():
     # 1. Demander le message de commit.
     # 1. Ask for the commit message.
+    current_branch = subprocess.run("git rev-parse --abbrev-ref HEAD", shell=True, text=True, capture_output=True).stdout.strip()
+    if current_branch == "HEAD":
+        print("Impossible de déterminer la branche actuelle. Veuillez vérifier votre dépôt Git.")
+        sys.exit(1)
+
+    # 2. Demander la branche de destination si la branche actuelle est 'main'.
+    # 2. Ask for the destination branch if the current branch is 'main'.
+    if current_branch == "main":
+        destination_branch = input("Entrez le nom de la branche de destination (laissez vide pour 'main') : ") or "main"
     commit_message = input("Entrez votre message de commit (ou laissez vide pour un message par défaut) : ")
     if not commit_message:
         commit_message = "Mise à jour automatique du projet via script Python"
@@ -40,8 +51,8 @@ def main():
     run_command("git add .")
     print(f"\n--- Création du commit avec le message : '{commit_message}' ---")
     run_command(f'git commit -m "{commit_message}"')
-    print("\n--- Push vers la branche 'main' de 'origin'... ---")
-    run_command("git push origin main")
+    print(f"\n--- Push vers la branche '{destination_branch}' de 'origin'... ---")
+    run_command(f"git push origin {destination_branch}")
     print("\n Push terminé avec succès !")
 
 if __name__ == "__main__":
