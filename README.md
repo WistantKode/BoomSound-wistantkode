@@ -1,43 +1,47 @@
-# BoomSound - Site Web de Casques Audio Responsive
+# BoomSound - Responsive Headphones Website
 
-![Aperçu du site BoomSound](./home.png)
+![BoomSound Website Preview](./assets/img/home.png)
 
-Ceci est une page d'accueil responsive pour une marque fictive de casques audio "BoomSound". Le projet met en avant le modèle "Beats 3" avec un design épuré et moderne, incluant un thème sombre et un thème clair.
+This is a responsive landing page for a fictional headphone brand "BoomSound". The project showcases the "Beats 3" model with a clean and modern design, including a dark and a light theme.
 
-## ✨ Fonctionnalités
+## ✨ Features
 
--   **Entièrement Responsive :** S'adapte à toutes les tailles d'appareils, des téléphones mobiles aux ordinateurs de bureau.
--   **Thème Sombre & Clair :** Un thème sombre par défaut avec une option pour un thème clair.
--   **Défilement Fluide :** Navigation fluide entre les différentes sections de la page.
--   **Animations au Défilement :** Les éléments s'animent élégamment à mesure que vous faites défiler la page grâce à ScrollReveal.
--   **Interface Utilisateur Propre & Moderne :** Un design esthétique et professionnel centré sur le produit.
+-   **Fully Responsive:** Adapts to all device sizes, from mobile phones to desktops.
+-   **Dark & Light Theme:** A default dark theme with an option for a light theme.
+-   **Smooth Scrolling:** Fluid navigation between the different sections of the page.
+-   **Scroll Animations:** Elements animate elegantly as you scroll down the page, powered by ScrollReveal.
+-   **Clean & Modern UI:** An aesthetic and professional user interface focused on the product.
 
-##  Démo en Ligne
+## 🚀 Live Demo
 
-Vous pouvez voir une démo en direct du projet ici : [BoomSound Demo](https://wistantkode.github.io/BoomSound-wistantkode/)
+You can see a live demo of the project here: [BoomSound Demo](https://wistantkode.github.io/BoomSound-wistantkode/)
 
-## 🛠️ Technologies Utilisées
+## 🛠️ Technologies Used
 
 -   **HTML5**
 -   **CSS3**
-    -   Variables CSS
+    -   CSS Variables
     -   Flexbox
     -   Grid Layout
--   **JavaScript** (pour l'interactivité du menu, le scroll et les animations)
--   **[Remixicon](https://remixicon.com/)** - pour les icônes.
--   **[ScrollReveal](https://scrollrevealjs.org/)** - pour les animations au défilement.
+-   **JavaScript** (for menu interactivity, scrolling, and animations)
+-   **[Remixicon](https://remixicon.com/)** - for icons.
+-   **[ScrollReveal](https://scrollrevealjs.org/)** - for scroll animations.
 -   **[Google Fonts](https://fonts.google.com/)**
 
-##  Comment l'utiliser
+## 🔧 How To Use
 
-Pour obtenir une copie locale et la faire fonctionner, suivez ces étapes simples.
+To get a local copy up and running, follow these simple steps.
 
-1.  Clonez le dépôt :
+1.  Clone the repository:
     ```sh
     git clone https://github.com/WistantKode/BoomSound-wistantkode.git
     ```
-2.  Ouvrez le fichier `index.html` dans votre navigateur web.
+2.  Open the `index.html` file in your web browser.
 
-##  Auteur
+##  License
+
+This project is distributed under the MIT License.
+
+##  Author
 
 -   **Wistant Kode** - GitHub
